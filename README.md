@@ -20,7 +20,7 @@ Auto poster using for https://www.facebook.com/progress20XX
 
 ## pie.py
 - uses matplotlib to plot
-- image(*yy‰‰‰.jpg*) size: 1000x1000 px diameter: 900 px
+- image(*yy‰‰‰.jpg*):{size: 1000x1000 px, diameter: 900 px}
 - uses datetime to get time
 
 ## Requirements
