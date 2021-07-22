@@ -24,7 +24,8 @@ Auto poster using for https://www.facebook.com/progress20XX
 - uses datetime to get time
 
 ## Requirements
-1. Windows 10+ [^1]
+1. Windows 10+ 
+  (In *upload_files.py* , Line 32, change the system command according to OS.)
 2. python 3.6+
 3. matplotlib
 4. datetime
@@ -36,4 +37,3 @@ Auto poster using for https://www.facebook.com/progress20XX
 - [Upload by requests](https://www.reddit.com/r/learnpython/comments/5677wn/uploading_jpg_to_facebook_through_graph_api/)
 - [matplotlib](https://matplotlib.org/)
 
-[^1]: In *upload_files.py* , Line 32, change the system command according to OS.
