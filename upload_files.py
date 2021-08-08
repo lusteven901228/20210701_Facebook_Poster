@@ -19,8 +19,7 @@ def upload(x):
     id = respond.json()['id']
     r = requests.post(
     'https://graph.facebook.com/106447670161953/feed?access_token='+page_access_token,data = {
-    'message':f'''{yr}已經過了{percent}%
-    {percent}% of year {yr} has passed.''',
+    'message':f'''{yr}已經過了{percent}%\n{percent}% of year {yr} has passed.''',
     'attached_media[0]':'{"media_fbid":'+id+'}',
     'access_token':page_access_token,
     'published':'false',
