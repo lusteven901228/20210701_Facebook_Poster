@@ -11,6 +11,7 @@ def plot_pie(x):
     ax.pie(t, colors = pie_color, startangle=90, radius=1.5,center = (0.41,0.41))
     fig.tight_layout()
     fig.savefig(str(x)+'.jpg', format='jpg', facecolor = 'w',bbox_inches = Bbox([[-0.41,-0.41],[9.59,9.59]]))
+    fig.close()
 def get_time(x):
 	yr = x//1000+2000
 	permille = x%1000
