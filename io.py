@@ -10,7 +10,7 @@ if __name__ == '__main__':
     x = int(input('start(yy-%%%):'))
     y = int(input('end(yy-%%%):'))
     for i in range(x,y):
-        q.put(x)
+        q.put(i)
     p = []
     for i in range(16):
         p.append(Process(target=worker()))
