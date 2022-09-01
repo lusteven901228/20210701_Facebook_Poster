@@ -4,10 +4,8 @@ import json
 import os
 t = open('config.json')
 data = json.load(t)
-user_access_token = data['user_access_token']
+page_access_token = data['page_access_token']
 page_id = data['page_id']
-p_response = requests.get('https://graph.facebook.com/'+ page_id + '?fields=access_token&access_token='+user_access_token)
-page_access_token = p_response.json()['access_token']
 t.close()
 url = 'https://graph.facebook.com/'+page_id+'/'
 def upload(x):
@@ -29,5 +27,7 @@ def upload(x):
     )
     print(r.json())
     os.system("del /f "+str(x)+'.jpg')
+    if not 'id' in r.json():
+        return True
 if __name__ == '__main__':
     upload(int(input('x')))
